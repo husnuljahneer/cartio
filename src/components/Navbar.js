@@ -3,6 +3,7 @@ import "./navbar.css";
 import './font.css'
 
 const Navbar = () => {
+
   return (
     <div className="navbarCenter" style={{ backgroundColor: "transparent" }}>
 

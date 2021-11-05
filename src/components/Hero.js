@@ -5,17 +5,15 @@ const Hero = () => {
   return (
     <Container className=" mt-5 vh-100">
       <h1>
-        <span
-          style={{
-            fontWeight: "600",
-            fontSize: "1.5rem",
+        <span>
+          <h6 style={{
+            fontWeight: "900",
+            fontSize: "1.2rem",
             fontFamily: "PT Sans",
-          }}
-        >
-          CARTIO.
-        </span>{" "}
-        <span style={{ fontWeight: "100", fontSize: "1.5rem" }}>
-          BEST SELLERS.
+          }}>CARTIO.</h6>
+        </span>
+        <span >
+          <h6 style={{ letterSpacing: "-2",fontWeight: "100", fontSize: "1.2rem" }}> BESTSELLERS </h6>
         </span>
       </h1>
       <Row>
