@@ -1,11 +1,58 @@
-import React from "react";
+import React , {useState} from "react";
 import "./navbar.css";
 import './font.css'
-
+import {
+  Nav,
+  NavContainer, 
+  NavLogo,
+  NavItem,
+  NavLinks,
+  NavMenu,
+  MobileIcon,
+} from './NavbarStyles';
+import { FaBars } from 'react-icons/fa'; 
 const Navbar = () => {
 
+  const [colorChange, setColorchange] = useState(false);
+  const changeNavbarColor = () =>{
+     if(window.scrollY >= 80){
+       setColorchange(true);
+     }
+     else{
+       setColorchange(false);
+     }
+  };
+  window.addEventListener('scroll', changeNavbarColor);
+
   return (
-    <div className="navbarCenter" style={{ backgroundColor: "transparent" }}>
+    <>
+    <Nav className={colorChange ? 'navbar colorChange' : 'navbar'}>
+    <NavContainer>
+       <NavLogo href="#">GeeksForGeeks</NavLogo>
+       <MobileIcon>
+        <FaBars />
+       </MobileIcon>
+       <NavMenu>
+         <NavItem>
+           <NavLinks href="#">About</NavLinks>
+         </NavItem>
+         <NavItem>
+           <NavLinks href="#">Services</NavLinks>
+         </NavItem>
+         <NavItem>
+           <NavLinks href="#">Events</NavLinks>
+         </NavItem>
+         <NavItem>
+           <NavLinks href="#">Contact</NavLinks>
+         </NavItem>
+         <NavItem>
+           <NavLinks href="#">Sign In</NavLinks>
+         </NavItem>
+       </NavMenu>
+    </NavContainer>
+ </Nav>
+
+    <div className={colorChange ? 'navbar colorChange' : 'navbar'}>
 
       <div
         className="d-flex justify-content-between my-3 align-items-center"
@@ -41,6 +88,7 @@ const Navbar = () => {
       </div>
     </div>
     </div>
+    </>
   );
 };
 

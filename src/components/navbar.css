@@ -17,3 +17,10 @@ i {
     left: 0;
     width: 100%;    
   }
+  .navbar{
+    background-color: transparent;
+}
+  
+.navbar.colorChange{
+    background-color: #000;
+}
