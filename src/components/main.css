@@ -1,0 +1,14 @@
+.main{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    width: 100%;
+}
+.navbarCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+}

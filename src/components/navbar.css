@@ -1,0 +1,19 @@
+.icons{
+    margin-left: 5px;
+}
+i {
+    color:'white';
+}
+.container {
+    max-width: '100%' ;
+    background-color: 'red'
+  }
+  .navbarCenter{
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: rgb(235, 195, 64);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }

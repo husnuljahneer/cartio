@@ -1,0 +1,12 @@
+.footer {
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  z-index: 16;
+  position: relative;
+  font-size: var(--fontSizeBodyS);
+  color: var(--colorTextLight);
+}
